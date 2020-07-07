@@ -9,6 +9,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
+import AppBar from '../AppBar/AppBar';
 
 const drawerWidth = 240;
 
@@ -37,6 +38,7 @@ export default function Sidebar() {
 
   return (
     <div className={classes.root}>
+      <AppBar />
       <Drawer
         className={classes.drawer}
         variant='permanent'
@@ -47,7 +49,7 @@ export default function Sidebar() {
         <Toolbar />
         <div className={classes.drawerContainer}>
           <List>
-            {['About', 'Github', 'Project', 'Resume'].map((text, index) => (
+            {['Bio', 'Github', 'Project', 'Resume'].map((text, index) => (
               <ListItem button key={text}>
                 <ListItemIcon>
                   {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}

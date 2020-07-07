@@ -22,7 +22,7 @@ export default function AppBarFixed() {
       <AppBar position='fixed' className={classes.appBar}>
         <Toolbar>
           <Typography variant='h6' noWrap>
-            Fixed AppBar
+            Jessica Bennett
           </Typography>
         </Toolbar>
       </AppBar>
